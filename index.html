@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Website with Errors</title>
+<meta name="description" content="This is a test website purposely built with errors for testing.">
     <!-- Missing meta description for SEO -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
     <!-- Missing favicon -->
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <!-- Broken link: services.html doesn't exist -->
-                <li><a href="services.html">Services</a></li>
+                <li><!-- Broken link fixed --><a href="#">Services</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +27,7 @@
             <h2>Introduction</h2>
             <p>This is a sample website intentionally built with errors for testing.</p>
             <!-- Large unoptimized image -->
-            <img src="large-image.jpg" alt="Large Unoptimized Image" width="1200" height="800">
+            <img src="large-image.jpg" alt="Large Unoptimized Image" width="1200" height="800" loading="lazy">
         </section>
         <section>
             <h2>Forms</h2>
@@ -39,7 +40,7 @@
                 <input type="email" id="email" name="email">
                 
                 <!-- Submit button missing "type" attribute -->
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>
@@ -48,9 +49,9 @@
         <!-- Broken image link -->
         <img src="logo.png" alt="Logo">
         <!-- Missing alt text for accessibility -->
-        <img src="footer-image.jpg">
+        <img src="footer-image.jpg" alt="Footer Image">
     </footer>
     <!-- Missing script tag for interactivity -->
-    <!-- <script src="scripts.js"></script> -->
+    <script src="scripts.js"></script>
 </body>
 </html>
