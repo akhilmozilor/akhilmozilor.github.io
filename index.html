@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Website with Errors</title>
-    <meta name="description" content="This is a test website with various common errors for teaching and testing purposes.">
+    <!-- Missing meta description for SEO -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+    <!-- Missing favicon -->
 </head>
 <body>
     <header>
@@ -26,7 +26,7 @@
             <h2>Introduction</h2>
             <p>This is a sample website intentionally built with errors for testing.</p>
             <!-- Large unoptimized image -->
-            <img src="large-image.jpg" alt="Large Unoptimized Image" width="1200" height="800" loading="lazy">
+            <img src="large-image.jpg" alt="Large Unoptimized Image" width="1200" height="800">
         </section>
         <section>
             <h2>Forms</h2>
@@ -39,16 +39,16 @@
                 <input type="email" id="email" name="email">
                 
                 <!-- Submit button missing "type" attribute -->
-                <button type="submit">Submit</button>
+                <button>Submit</button>
             </form>
         </section>
     </main>
     <footer>
         <p>Copyright © 2025 Test Website</p>
         <!-- Broken image link -->
-        <img src="logo.png" alt="Logo" loading="lazy">
+        <img src="logo.png" alt="Logo">
         <!-- Missing alt text for accessibility -->
-        <img src="footer-image.jpg" alt="Website Footer Image" loading="lazy">
+        <img src="footer-image.jpg">
     </footer>
     <!-- Missing script tag for interactivity -->
     <!-- <script src="scripts.js"></script> -->
