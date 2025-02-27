@@ -10,12 +10,11 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Buggy Test Site of TT</h1>
+        <h1>Welcome to the Test Site</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <!-- Broken link: services.html doesn't exist -->
                 <li><a href="services.html">Services</a></li>
             </ul>
@@ -24,14 +23,14 @@
     <main>
         <section>
             <h2>Introduction</h2>
-            <p>This is a sample website intentionally built with errors for testing.</p>
+            <p>This is a sample website intentionally built with errors for demo.</p>
             <!-- Large unoptimized image -->
-            <img src="images/building.jpg" alt="Large Unoptimized Image" width="1200" height="800">
+            <img src="images/building.jpg" width="1200" height="800">
         </section>
         <section>
             <h2>Forms</h2>
             <form action="/submit" method="post">
-                <label for="username">Username</label>
+                <label>Username</label>
                 <!-- Missing "for" attribute mismatch -->
                 <input type="text" id="username" name="username">
                 
@@ -46,11 +45,9 @@
     <footer>
         <p>Copyright © 2025 Test Website</p>
         <!-- Broken image link -->
-        <img src="logo.png" alt="Logo">
+        <img src="images/logoo.jpg" alt="Logo" height="50" width="50">
         <!-- Missing alt text for accessibility -->
-        <img src="footer-image.jpg">
+        <img src="images/star-logo.jpg" height="50" width="50">
     </footer>
-    <!-- Missing script tag for interactivity -->
-    <!-- <script src="scripts.js"></script> -->
 </body>
 </html>
