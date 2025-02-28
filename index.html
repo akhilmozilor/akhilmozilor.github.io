@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Website with Errors</title>
-    <meta name="description" content="This is a test website with some errors. We are working on fixing these. Stay tuned!">
+    <!-- Missing meta description for SEO -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Missing favicon -->
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
             <h2>Introduction</h2>
             <p>This is a sample website intentionally built with errors for demo.</p>
             <!-- Large unoptimized image -->
-            <img src="images/building.jpg" alt="building" width="1200" height="800" loading="lazy">
+            <img src="images/building.jpg" alt="building" width="1200" height="800">
         </section>
         <section>
             <h2>Forms</h2>
@@ -37,23 +37,16 @@
                 <input type="email" id="email" name="email">
                 
                 <!-- Submit button missing "type" attribute -->
-                <button type="submit">Submit</button>
+                <button>Submit</button>
             </form>
         </section>
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Old version -->
-        <script>
-            console.log('This is a deprecated method');
-        </script>
-        <script>
-            console.log('This is inline JavaScript');
-        </script>
     </main>
     <footer>
         <p>Copyright © 2025 Test Website</p>
         <!-- Broken image link -->
         <img src="images/logooo.jpg" alt="Logo" height="50" width="50">
         <!-- Missing alt text for accessibility -->
-        <img src="images/nature.png" alt="Nature Image" height="50" width="50">
+        <img src="images/nature.png" height="50" width="50">
     </footer>
 </body>
 </html>
