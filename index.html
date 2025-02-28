@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Website with Errors</title>
-    <!-- Missing meta description for SEO -->
+    <meta name='description' content='This is a demo website'>
     <link rel="stylesheet" href="styles.css">
-    <!-- Missing favicon -->
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
             <h2>Introduction</h2>
             <p>This is a sample website intentionally built with errors for demo.</p>
             <!-- Large unoptimized image -->
-            <img src="images/building.jpg" alt="building" width="1200" height="800">
+            <img src="images/building.jpg" alt="building" width="auto" height="auto">
         </section>
         <section>
             <h2>Forms</h2>
@@ -37,7 +37,7 @@
                 <input type="email" id="email" name="email">
                 
                 <!-- Submit button missing "type" attribute -->
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>
@@ -46,7 +46,7 @@
         <!-- Broken image link -->
         <img src="images/logooo.jpg" alt="Logo" height="50" width="50">
         <!-- Missing alt text for accessibility -->
-        <img src="images/nature.png" height="50" width="50">
+        <img src="images/nature.png" alt="Nature Image" height="50" width="50">
     </footer>
 </body>
 </html>
